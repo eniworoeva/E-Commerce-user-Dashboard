@@ -1,69 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-clinic-medical"></i>
-                    <div class="title">Oja</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-th-large"></i>
-                    <div class="title">Dashboard</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-user"></i>
-                    <div class="title">Profile</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-archive"></i>
-                    <div class="title">Orders</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-puzzle-piece"></i>
-                    <div class="title">Change password</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    <div class="title">Payments</div>
-                    </a>
-                </li>
-            </ul>
-
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-clinic-medical"></i>
+              <div class="title">Oja</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div class="title">Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user"></i>
+              <div class="title">Profile</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-archive"></i>
+              <div class="title">Orders</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-puzzle-piece"></i>
+              <div class="title">Change password</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-hand-holding-usd"></i>
+              <div class="title">Payments</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="top-bar">
+          <div class="search">
+            <input type="text" name="search" placeholder="search here" />
+            <label for="search"><i class="fas fa-search"></i></label>
+          </div>
+          <i class="fas fa-bell"></i>
+          <div class="user">
+            <img src="./images/cv__29__generated.jpg" alt="" />
+          </div>
         </div>
-        <div class="main">
-            <div class="top-bar">
-                <div class="search">
-                    <input type="text" name="search" placeholder="search here">
-                    <label for="search"><i class="fas fa-search"></i></label>
-                    <i class="fas fa-bell"></i>
-                    <div class="user">
-                        <img src="" alt="">
-                    </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">67</div>
+                    <div class="card-name">Lorem</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-briefcase-medical"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">105</div>
+                    <div class="card-name">Ipsum</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-briefcase-medical"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">8</div>
+                    <div class="card-name">Dolor</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-briefcase-medical"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number">$4500</div>
+                    <div class="card-name">income</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-dollar-sign"></i>
                 </div>
             </div>
         </div>
+        <div class="tables">
+            <div class="last-appointments">
+                <div class="heading">
+                    <h2>Order Overview</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table class="appointments">
+                    <thead>
+                        <td>Name</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Action</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oreva Ansel</td>
+                            <td>Television</td>
+                            <td>$4,000</td>
+                            <td>
+                                <i class="far fa-eye"></i>
+                                <i class="far fa-edit"></i>
+                                <i class="far fa-trash-alt"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Oluchi Tiyan</td>
+                            <td>Drapes</td>
+                            <td>$2,000</td>
+                            <td>
+                                <i class="far fa-eye"></i>
+                                <i class="far fa-edit"></i>
+                                <i class="far fa-trash-alt"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chuks Okoro</td>
+                            <td>Toothpick</td>
+                            <td>$1</td>
+                            <td>
+                                <i class="far fa-eye"></i>
+                                <i class="far fa-edit"></i>
+                                <i class="far fa-trash-alt"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Victor Ihemadu</td>
+                            <td>Main.go</td>
+                            <td>$2</td>
+                            <td>
+                                <i class="far fa-eye"></i>
+                                <i class="far fa-edit"></i>
+                                <i class="far fa-trash-alt"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="doctor-visiting">
+                <div class="heading">
+                    <h2>Buyer records</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table class="visiting">
+                    <thead>
+                        <td>Photo</td>
+                        <td>Name</td>
+                        <td>Total Orders</td>
+                        <td>Details</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="img-box-small">
+                                    <img src="./images/cv__29__generated.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>Gbenga</td>
+                            <td>11</td>
+                            <td><i class="far fa-eye"></i></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img-box-small">
+                                    <img src="./images/cv__29__generated.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>Cecelia</td>
+                            <td>24</td>
+                            <td><i class="far fa-eye"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

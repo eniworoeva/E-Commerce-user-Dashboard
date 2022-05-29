@@ -5,9 +5,6 @@
     font-family:'poppins', sans-serif;
 }
 
-body {
-    overflow: hidden;
-}
 
 .container {
     position: relative;
@@ -18,7 +15,6 @@ body {
     position: fixed;
     width: 300px;
     height: 100%;
-    /* background: linear-gradient(45deg, #47cebe, #ef4a82); */
     background: #ffc107;
     overflow-x: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -128,7 +124,6 @@ img {
     grid-gap: 20px;
 }
 .cards .card {
-    /* background: linear-gradient(45deg, #47cebe, #ef4a82); */
     background: #ffc107;
     padding: 20px;
     display: flex;
@@ -254,5 +249,39 @@ td i {
     }
     .tables{
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:530px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+.last-appointments td:nth-child(3) {
+    display: none;
+}
+@media(max-width:420px) {
+    .last-appointments{
+        font-size: 70%;
+        padding: 10px;
+        min-height: 200px;
+    }
+    .doctor-visiting {
+        font-size: 70%;
+        padding: 10px;
+        min-height: 200px;
+    }
+    .cards{
+        padding: 10px;
+    }
+    .tables {
+        padding: 10px;
+    }
+    .search input{
+       padding: 0 10px; 
+    }
+    .user {
+        width: 40px;
+        height: 40px;
     }
 }
